@@ -1,0 +1,237 @@
+*{
+	box-sizing: border-box;
+}
+p {
+	font-family: condor, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #962d3b;
+	font-size: 60px;
+	margin-left: 20px;
+}
+h1 {
+	color: #847c74;
+	font-family: serenity,sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 26px;
+	margin-left: 20px;
+	margin-top: -60px;
+	line-height: 28px;
+}
+.zi{
+	text-align: right;
+	margin-right: 45px;
+	margin-top: -300px;
+}
+.zi img{
+	width: 700px;
+}
+body{
+	margin-left: 10px;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1050px;
+	height: 600px;
+	margin-left: 150px;
+	margin-top: -600px;
+}
+.container ul{
+	list-style: none;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	margin-left: 10px;
+}
+.container ul li{
+	width: 180px;
+	cursor: pointer;
+}
+.container ul li img{
+	width: 100%;
+	border: 5px solid transparent;
+}
+.container ul .bigimg{
+	position: absolute;
+	top: 0;
+	left: 30px;
+	width: 1150px;
+	height: 480px;
+	border: 5px solid transparent;
+	background: url(web图.jpg) no-repeat;
+	background-size: contain;
+	transition: all 0.5s;
+}
+.container ul .frame{
+	position: absolute;
+	left: 55px;
+	bottom: 6px;
+	width: 170px;
+	height: 90px;
+	border: 5px solid #1a2624;
+	pointer-events: none;
+	transition: all 0.5s;
+}
+.container ul .frame::before{
+	content: "";
+	position: absolute;
+	top: -20px;
+	left: calc(50% - 15px);
+	width: 30px;
+	height: 15px;
+	background-color: #1a2624;
+	clip-path: polygon(0 100%, 50% 0, 100% 100%);
+}
+.container ul li:nth-child(1):hover ~ .bigimg{
+	background-image: url(web图.jpg);
+}
+.container ul li:nth-child(1):hover ~ .frame{
+	left: 55px;
+}
+.container ul li:nth-child(2):hover ~ .bigimg{
+	background-image: url(web图2.jpg);
+}
+.container ul li:nth-child(2):hover ~ .frame{
+	left: 255px;
+}
+.container ul li:nth-child(3):hover ~ .bigimg{
+	background-image: url(web图3.jpg);
+}
+.container ul li:nth-child(3):hover ~ .frame{
+	left: 455px;
+}
+.container ul li:nth-child(4):hover ~ .bigimg{
+	background-image: url(web图4.jpg);
+}
+.container ul li:nth-child(4):hover ~ .frame{
+	left: 655px;
+}
+.container ul li:nth-child(5):hover ~ .bigimg{
+	background-image: url(web图5.jpg);
+}
+.container ul li:nth-child(5):hover ~ .frame{
+	left: 855px;
+}
+.intro{
+	color: #847c74;
+	font-family: serenity,sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	line-height: 25px;
+	font-size: 22px;
+	margin-top: 30px;
+	margin-left: 40px;
+	width: 600px;
+}
+.caption {
+	font-family: condor, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 60px;
+	color: #1a2624;
+	transition: color 0.2s;
+	margin-left: 100px;
+}
+.caption:hover {
+	color: #962d3b;
+}
+h1 {
+	font-family: bilo, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.ns{
+	float: right;
+	margin-right: 100px;
+	margin-top: -50px;
+}
+.circle { 
+	width: 20px; height: 20px;
+	border-radius: 50%;
+	background: none; 
+	border: 4px solid #847c74;
+	margin-right: 100px;
+}
+.next{
+	font-family: condor, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: #962d3b;
+	text-align: right;
+	font-size: 34px;
+	margin-right: -54px;
+	margin-top: -29px;
+	transition: all 0.2s;
+}
+a {
+	text-decoration: none;
+	color: #962d3b;
+}
+a:link{
+	color: #962d3b;
+}
+a:hover{
+	color: #1a2624;
+}
+.next:hover{
+	color: #1a2624;
+	margin-right: -68px;
+}
+.ditu{
+	margin: 0;
+	border: 0;
+}
+.ditu img{
+	width: 100%;
+}
+h2{
+	font-family: serenity,sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	line-height: 25px;
+	font-size: 22px;
+	color: #1a2624;
+	align-items: middle;
+	margin-top: -120px;
+	margin-left: 30px;
+}
+.deco{
+	margin-left: 720px;
+	margin-top: -550px;
+}
+.deco img{
+	width: 280px;
+}
+.place{
+	text-align: right;
+	color: #847c74;
+	font-family: serenity,sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 22px;
+	line-height: 22px;
+	margin-top: -510px;
+}
+.cloud{
+	text-align: top;
+	width: 1200px;
+	position: fixed;
+	margin-top: -680px;
+	animation: scroll 25s linear infinite;
+}
+@keyframes scroll{ 
+    0% {
+    	transform: translateX(0);
+    }
+    50%{
+    	transform: translateX(50%);
+    }
+    100%{
+    	transform: translateX(100%);
+    }
